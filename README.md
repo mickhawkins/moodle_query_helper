@@ -10,6 +10,8 @@ Are you like me and hate having to go through and replace table names and placeh
 6. If you stuffed up and missed filling in any placeholders, repeat step 5.
 7. The query in the SQL input is ready to be copied out to run in your test environment (or whatever you planned to do).
 
+Note: To save time, I haven't handled question marks within values, so they will be picked up and replaced with placeholders (ie only use them to represent a placeholder). Colons within values are handled though, so can be used in strings.
+
 ***EXAMPLE***
 
 **Input**
