@@ -12,8 +12,8 @@ if (isset($_POST['sql'])) {
 
     // Find all query placeholders.
     $placeholders = [];
-    preg_match_all('/\:[a-z0-9]+/i', $sql, $placeholders);
-    $placeholders = $placeholders[0];
+    preg_match_all('/[\s\=](\:[a-z0-9]+)/i', $sql, $placeholders);
+    $placeholders = $placeholders[1];
 
     // Replace question mark placeholders with string placeholders.
     $placeholderindex = 1;
